@@ -18,7 +18,7 @@ Bu proje, tren seferlerinde vagon bazlı online bilet rezervasyon kurallarını 
 ## 🧪 Örnek İstek ve Yanıt Senaryoları
 
 ### Senaryo 1: Farklı Vagonlara Dağıtımlı Rezervasyon (Başarılı)
-**POST** `/api/Reservations`
+**POST** `/api/Reservation`
 
 **Request:**
 ```json
@@ -47,7 +47,7 @@ Bu proje, tren seferlerinde vagon bazlı online bilet rezervasyon kurallarını 
 ```
 
 ### Senaryo 2: Tek Vagon Kuralı & Kapasite Yetersizliği (Başarısız)
-**POST** `/api/Reservations`
+**POST** `/api/Reservation`
 
 **Request:**
 ```json
