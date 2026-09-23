@@ -2,6 +2,18 @@
 
 Bu proje, tren seferlerinde vagon bazlı online bilet rezervasyon kurallarını yöneten bir RESTful Web API servisidir.
 
+--- 
+
+## 🚀 Canlı Demo (Live API & Swagger)
+
+Uygulama canlı ortama alınmış olup, tüm iş kurallarını ve rezervasyon senaryolarını Swagger UI üzerinden test edebilirsiniz:
+
+🔗 **Canlı Swagger UI:** [Swagger Arayüzüne Git](https://trainreservationapi-iunp.onrender.com)
+
+> **Not:** Ek bir uzantı girmeden link üzerinden anında test edilebilir.
+
+---
+
 ## 🚀 Kullanılan Teknolojiler & Mimari Yaklaşım
 * **.NET 8 / ASP.NET Core Web API**
 * **Dependency Injection & Interface Abstraction:** İş kuralları controller katmanından tamamen izole edilmiş, `IReservationService` arayüzü üzerinden soyutlanarak test edilebilir ve sürdürülebilir bir mimari kurulmuştur.
