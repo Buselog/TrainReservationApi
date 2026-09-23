@@ -5,10 +5,10 @@ ENV ASPNETCORE_URLS=http://+:8080
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["TrainReservationProject.csproj", "./"]
-RUN dotnet restore "./TrainReservationProject.csproj"
+COPY ["TrainReservationProject/TrainReservationProject.csproj", "TrainReservationProject/"]
+RUN dotnet restore "TrainReservationProject/TrainReservationProject.csproj"
 COPY . .
-WORKDIR "/src/."
+WORKDIR "/src/TrainReservationProject"
 RUN dotnet build "TrainReservationProject.csproj" -c Release -o /app/build
 
 FROM build AS publish
